@@ -1,7 +1,20 @@
 
  - Start the 'init_sat' executable an take the satelite name which is shown on the picture in the PDF, 'osmium'
- - Open a second shell and run a 'netstat'
-
+ > # ./init_sat
+> Hello Operator. Ready to connect to a satellite?
+> Enter the name of the satellite to connect to or 'exit' to quit
+> osmium
+> Establishing secure connection to osmium
+>  satellite...
+> Welcome. Enter (a) to display config data, (b) to erase all data or (c) to disconnect
+> 
+> a
+> Username: brewtoot password: ********************	166.00 IS-19 2019/05/09 00:00:00	Swath 640km	Revisit capacity twice daily, anywhere Resolution panchromatic: 30cm multispectral: 1.2m	Daily acquisition capacity: 220,000km²	Remaining config data written to: https://docs.google.com/document/d/14eYPluD_pi3824GAFanS29tWdTcKxP_XUxx7e303-3E
+> 
+> c
+> Disconnecting, goodbye.
+ - Under https://docs.google.com/document/d/14eYPluD_pi3824GAFanS29tWdTcKxP_XUxx7e303-3E we find a base64 encoded string which unfortunately is not what we are searching for
+ - If we start the executable again an connect to osmium, and open a second shell and run a 'netstat':
 > # netstat -an
 > Active Internet connections (servers and established)
 > Proto Recv-Q Send-Q Local Address           Foreign Address         State

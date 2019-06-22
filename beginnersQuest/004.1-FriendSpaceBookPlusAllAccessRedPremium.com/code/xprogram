@@ -1,0 +1,136 @@
+load acc1 0 push acc1
+load acc1 17488 push acc1
+load acc1 16758 push acc1
+load acc1 16599 push acc1
+load acc1 16285 push acc1
+load acc1 16094 push acc1
+load acc1 15505 push acc1
+load acc1 15417 push acc1
+load acc1 14832 push acc1
+load acc1 14450 push acc1
+load acc1 13893 push acc1
+load acc1 13926 push acc1
+load acc1 13437 push acc1
+load acc1 12833 push acc1
+load acc1 12741 push acc1
+load acc1 12533 push acc1
+load acc1 11504 push acc1
+load acc1 11342 push acc1
+load acc1 10503 push acc1
+load acc1 10550 push acc1
+load acc1 10319 push acc1
+load acc1 975 push acc1
+load acc1 1007 push acc1
+load acc1 892 push acc1
+load acc1 893 push acc1
+load acc1 660 push acc1
+load acc1 743 push acc1
+load acc1 267 push acc1
+load acc1 344 push acc1
+load acc1 264 push acc1
+load acc1 339 push acc1
+load acc1 208 push acc1
+load acc1 216 push acc1
+load acc1 242 push acc1
+load acc1 172 push acc1
+load acc1 74 push acc1
+load acc1 49 push acc1
+load acc1 119 push acc1
+load acc1 113 push acc1
+load acc1 119 push acc1
+load acc1 106 push acc1
+load acc2 1
+
+
+🖋💠🔶🎌🚩🏁 push acc2
+ppp clone pop acc2 xor print_top
+if_not_zero jump_to 💰💠🔶🎌🚩🏁 fi
+
+
+load acc1 98426 push acc1
+load acc1 97850 push acc1
+load acc1 97604 push acc1
+load acc1 97280 push acc1
+load acc1 96815 push acc1
+load acc1 96443 push acc1
+load acc1 96354 push acc1
+load acc1 95934 push acc1
+load acc1 94865 push acc1
+load acc1 94952 push acc1
+load acc1 94669 push acc1
+load acc1 94440 push acc1
+load acc1 93969 push acc1
+load acc1 93766 push acc1
+load acc2 93738
+
+🖋💠🏁🎌🔶🚩 push acc2
+ppp clone pop acc2 xor print_top
+if_not_zero jump_to 💰💠🏁🎌🔶🚩 fi
+
+load acc1 101141058 push acc1
+load acc1 101060206 push acc1
+load acc1 101030055 push acc1
+load acc1 100998966 push acc1
+load acc1 100887990 push acc1
+load acc1 100767085 push acc1
+load acc1 100707036 push acc1
+load acc1 100656111 push acc1
+load acc1 100404094 push acc1
+load acc1 100160922 push acc1
+load acc1 100131019 push acc1
+load acc1 100111100 push acc1
+load acc1 100059926 push acc1
+load acc1 100049982 push acc1
+load acc1 100030045 push acc1
+load acc1 9989997 push acc1
+load acc1 9981858 push acc1
+load acc1 9980815 push acc1
+load acc1 9978842 push acc1
+load acc1 9965794 push acc1
+load acc1 9957564 push acc1
+load acc1 9938304 push acc1
+load acc1 9935427 push acc1
+load acc1 9932289 push acc1
+load acc1 9931494 push acc1
+load acc1 9927388 push acc1
+load acc1 9926376 push acc1
+load acc1 9923213 push acc1
+load acc1 9921394 push acc1
+load acc1 9919154 push acc1
+load acc1 9918082 push acc1
+load acc1 9916239 push acc1
+load acc2 9916198
+
+🖋🚩💠🎌🔶🏁 push acc2
+ppp clone pop acc2 xor print_top
+if_not_zero jump_to 💰🚩💠🎌🔶🏁 fi
+exit
+
+🖋🏁🚩🎌💠🔶
+load acc1 2 push acc1 🖋💠🎌🏁🚩🔶
+jump_to 💰🚩🔶🏁🎌💠
+🖋🔶🎌🚩💠🏁 if_zero pop_out jump_to 💰🔶🚩💠🏁🎌  fi
+pop_out jump_to 💰🎌🏁💠🔶🚩
+🖋🎌🏁🚩🔶💠 if_zero pop_out jump_to 💰🔶🚩💠🏁🎌 fi
+pop_out pop acc1 load acc2 1 push acc2 sub
+if_zero pop_out pop acc2 push acc1 push acc2 jump_top fi push acc1
+🖋🔶🚩💠🏁🎌 load acc2 1 push acc2 add jump_to 💰💠🎌🏁🚩🔶
+
+🖋🚩🔶🏁🎌💠
+clone load acc1 2 push acc1
+🖋🎌🚩💠🔶🏁 sub if_zero pop_out load acc1 1 push acc1
+jump_to 💰🔶🎌🚩💠🏁 fi
+pop_out clone push acc1
+modulo if_zero jump_to 💰🔶🎌🚩💠🏁 fi
+pop_out clone push acc1 load acc1 1
+push acc1 add clone pop acc1 jump_to 💰🎌🚩💠🔶🏁
+
+🖋🎌🏁💠🔶🚩
+clone clone load acc2 0 push acc2
+🖋🏁💠🔶🚩🎌 load acc1 10 push acc1
+multiply pop acc2 push acc1 modulo
+push acc2 add pop acc2 pop acc1 clone push acc2 sub
+if_zero pop_out load acc2 1 push acc2 jump_to 💰🎌🏁🚩🔶💠 fi
+pop_out push acc1 load acc1 10 push acc1 divide
+if_zero jump_to 💰🎌🏁🚩🔶💠 fi
+clone push acc2 jump_to 💰🏁💠🔶🚩🎌
